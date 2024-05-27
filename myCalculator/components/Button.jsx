@@ -4,25 +4,25 @@ import { StyleSheet, View, Dimensions, TouchableOpacity, Text } from 'react-nati
 
 export default ({ onPress, text, size, theme}) => {
 
-    const buttonStyles = [styles.button];
-    const textStyles = [styles.text];
+  const buttonStyles = [styles.button];
+  const textStyles = [styles.text];
 
-    if(size === 'double'){
-        buttonStyles.push(styles.buttonDouble);
-    }
+  if(size === 'double'){
+    buttonStyles.push(styles.buttonDouble);
+  }
 
-    if(theme === 'secondary'){
-        buttonStyles.push(styles.buttonSecondary);
-        textStyles.push(styles.textSecondary);
-    }else if(theme === 'accent'){
-        buttonStyles.push(styles.buttonAccent);
-    }
+  if(theme === 'secondary'){
+    buttonStyles.push(styles.buttonSecondary);
+    textStyles.push(styles.textSecondary);
+  }else if(theme === 'accent'){
+    buttonStyles.push(styles.buttonAccent);
+  }
 
-    return (
-        <TouchableOpacity onPress={onPress} style={buttonStyles}>
-            <Text style={textStyles}>{text}</Text>
-        </TouchableOpacity>
-    );
+  return (
+    <TouchableOpacity onPress={onPress} style={buttonStyles}>
+      <Text style={textStyles}>{text}</Text>
+    </TouchableOpacity>
+  );
 }
 
 

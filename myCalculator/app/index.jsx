@@ -18,7 +18,7 @@ export default class App extends Component {
   render() {
     return (
       <View style={styles.container}>
-        {/* Status bae here */}
+        {/* Status be here */}
         <SafeAreaView>
           <Text style={styles.value}>
             {parseFloat(this.state.currentValue).toLocaleString()}
@@ -29,19 +29,19 @@ export default class App extends Component {
             <Button
               text="C"
               theme="secondary"
-              onPress={() => this.HandleTap("clear", 'C')}
+              onPress={() => this.HandleTap("clear")}
             />
 
             <Button
               text="+/-"
               theme="secondary"
-              onPress={() => this.HandleTap("posneg", " ")}
+              onPress={() => this.HandleTap("posneg")}
             />
 
             <Button
               text="%"
               theme="secondary"
-              onPress={() => this.HandleTap("percentage", "%")}
+              onPress={() => this.HandleTap("percentage")}
             />
 
             <Button

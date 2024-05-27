@@ -1,18 +1,18 @@
 export const initialState = {
-    currentValue: "0",
-    operator: null,
-    previousValue: null,
-  };
+  currentValue: "0",
+  operator: null,
+  previousValue: null,
+};
   
-  export const handleNumber = (value, state) => {
-    if (state.currentValue === "0") {
-      return { currentValue: `${value}` };
-    }
+export const handleNumber = (value, state) => {
+  if (state.currentValue === "0") {
+    return { currentValue: `${value}` };
+  }
   
-    return {
-      currentValue: `${state.currentValue}${value}`,
-    };
+  return {
+    currentValue: `${state.currentValue}${value}`,
   };
+};
   
   const handleEqual = (state) => {
     const { currentValue, previousValue, operator } = state;
