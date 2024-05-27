@@ -1,7 +1,8 @@
 import React from 'react';
-import { StyleSheet, View, Dimensions, TouchableOpacity } from 'react-native';
+import { StyleSheet, View, Dimensions, TouchableOpacity, Text } from 'react-native';
 
-export default ({ onPress, test, size, theme }) => {
+
+export default ({ onPress, text, size, theme}) => {
 
     const buttonStyles = [styles.button];
     const textStyles = [styles.text];
